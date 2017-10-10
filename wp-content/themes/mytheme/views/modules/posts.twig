@@ -1,0 +1,12 @@
+ 
+ {% for post in posts %} 
+  <article>
+    {% if post.thumbnail %}
+      <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.alt }}"/>
+    {% endif %}
+      <h2>{{post.title}}</h2>
+      {# Filter cuts content after 20 Words and adds ... #}
+      <p>{{ post.content|excerpt(20) }} </p>
+  </article> 
+ {% endfor %}
+

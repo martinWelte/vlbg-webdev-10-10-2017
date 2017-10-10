@@ -1,0 +1,15 @@
+
+
+
+{% extends "views/common/base.twig" %}
+
+{% block content %}
+
+  {# testfield is a ACF Field#}
+  {% if post.testfeld %}
+    <h1>{{post.testfeld}}</h1>
+  {% endif %}
+  
+  {% include 'views/modules/posts.twig' with posts %}
+
+{% endblock %}

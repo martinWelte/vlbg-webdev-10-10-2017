@@ -1,0 +1,31 @@
+{
+    "name": "martinWelte/webdev-vlbg",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Welte",
+            "email": "martin.welte@towa.at"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/timber-library": "@stable",
+        "wpackagist-plugin/advanced-custom-fields": "@stable"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mytheme\\": "wp-content/themes/mytheme/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

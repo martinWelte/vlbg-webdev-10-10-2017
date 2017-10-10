@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<!--[if (IE 9) ]>
+<html class="no-js ie-9" lang="{{ site.language }}"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="{{ site.language }}">
+<!--<![endif]-->
+
+{% include 'views/common/head.twig' %}
+
+<body class="{{ body_class }}">
+  {% include 'views/common/header.twig' %} 
+  
+  <main>
+    {% block content %}
+      
+    {% endblock %}
+  </main>
+
+  {% include 'views/common/footer.twig' %}
+</body>
+
+</html>

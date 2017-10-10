@@ -1,0 +1,8 @@
+<nav>
+  <ul>
+    {% for item in primary_menu.get_items %}
+      <li><a href="{{ item.url }}">{{item.name}}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+

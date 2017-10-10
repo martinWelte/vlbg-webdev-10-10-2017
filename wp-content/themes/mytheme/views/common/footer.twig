@@ -1,0 +1,9 @@
+<footer class="footer">
+  <nav>
+    <ul>
+      {% for item in footer_menu.get_items %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</footer>
